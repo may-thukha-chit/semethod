@@ -1,1 +1,2 @@
 ![workflow](https://github.com/may-thukha-chit/semethod/actions/workflows/main.yml/badge.svg)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/may-thukha-chit/semethod/main.yml?branch=develop)
