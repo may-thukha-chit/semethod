@@ -118,6 +118,31 @@ public class App
         }
     }
 
+public void getEmployeeByTitle(String title)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT * "
+                    + "FROM employees "
+                    + "WHERE title = " + title;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            while (rset.next()){
+                System.out.println("First name: " + rset.getString("first_name") + " Salary: " + rset.getInt("salary"));
+            }
+            
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get employee details");
+          
+        }
+    }
+
     public static void main(String[] args)
     {
         // Create new Application
@@ -129,6 +154,8 @@ public class App
         Employee emp = a.getEmployee(255530);
         // Display results
         a.displayEmployee(emp);
+
+	Empl
 
         // Disconnect from database
         a.disconnect();
