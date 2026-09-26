@@ -156,7 +156,7 @@ public void getEmployeeByTitle(String title)
         // Display results
         a.displayEmployee(emp);
 
-	Empl
+	a.getEmployeeByTitle("Engineer");
 
         // Disconnect from database
         a.disconnect();
