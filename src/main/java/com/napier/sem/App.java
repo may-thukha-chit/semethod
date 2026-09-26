@@ -134,6 +134,7 @@ public void getEmployeeByTitle(String title)
             while (rset.next()){
                 System.out.println("First name: " + rset.getString("first_name") + " Salary: " + rset.getInt("salary"));
             }
+        }
             
         catch (Exception e)
         {
